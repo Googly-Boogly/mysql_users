@@ -1,0 +1,28 @@
+USE users_3;
+
+INSERT INTO users_3 (first_name, last_name, email, created_at, updated_at)
+VALUES ('Alex', 'Jay', 'Alex@gmail.com', now(), now());
+
+INSERT INTO users_3 (first_name, last_name, email, created_at, updated_at)
+VALUES ('John', 'smith', 'john@gmail.com', now(), now());
+
+INSERT INTO users_3 (first_name, last_name, email, created_at, updated_at)
+VALUES ('julia', 'john', 'Julia@gmail.com', now(), now());
+
+SELECT *
+FROM users_3;
+
+SELECT *
+FROM users_3
+WHERE email = 'john@gmail.com';
+SELECT * 
+FROM users_3
+WHERE id = 3;
+
+UPDATE users_3 SET last_name = 'Pancakes' WHERE id = 3;
+DELETE FROM users_3 WHERE id = 2;
+
+SELECT * FROM users_3 ORDER BY first_name ASC;
+SELECT * FROM users_3 ORDER BY first_name DESC;
+
+
